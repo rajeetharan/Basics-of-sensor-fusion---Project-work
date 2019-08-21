@@ -1,7 +1,6 @@
 from altimu10v5.lsm6ds33 import LSM6DS33
 from altimu10v5.lis3mdl import LIS3MDL
 from altimu10v5.lps25h import LPS25H
-from time import sleep
 import calendar
 import numpy as np
 import time
