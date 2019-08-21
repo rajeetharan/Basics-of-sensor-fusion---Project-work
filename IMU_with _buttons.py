@@ -55,10 +55,10 @@ def do_imu():
 try:
     while True:
         if button_start.is_pressed :
-            print("button_start pressed 1")
+            print("Button_start pressed ")
             do_imu()
         else:
-            print("NOOO  button_start ")
+            print("Start not pressed ")
             
         if button_end.is_pressed :
             print("closing program")
@@ -68,7 +68,7 @@ try:
             pass
         
 
-finally:                   # this block will run no matter how the try block exits  
+finally:                     
     GPIO.cleanup() 
 
 pause()     
