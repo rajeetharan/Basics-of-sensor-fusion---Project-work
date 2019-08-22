@@ -119,6 +119,7 @@ while True:
     
     with open("camera reading {}.txt".format(datetime.now().strftime('%d-%m-%Y-%H-%M')), "ab") as ff:
         np.savetxt(ff, np.expand_dims(timestamped_camera_readings, axis=0),fmt='%f')
+        #saving results into a file
         
     key = cv2.waitKey(1)
     if key == 0:
