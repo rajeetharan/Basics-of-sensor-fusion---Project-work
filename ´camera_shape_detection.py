@@ -62,7 +62,7 @@ while True:
         area = cv2.contourArea(cnt)
         # area of detected contour
         approx = cv2.approxPolyDP(cnt, 0.02*cv2.arcLength(cnt, True), True)
-        #It predicts a pixel connected contour to a shape
+        #It predicts and makes pixel connected contour to a shape
         x = approx.ravel()[0]
         y = approx.ravel()[1]
         # detected shape type label text placement 
