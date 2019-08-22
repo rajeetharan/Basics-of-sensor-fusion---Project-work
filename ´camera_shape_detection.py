@@ -36,8 +36,8 @@ while True:
     high_H = 255
     high_S = 255
     high_V = 255
-    # my  filtering values for shape colors
-    # from following link we can filter any interested color
+    # my  filtered HSV values for shape colors
+    # from following link we can HSV filter any interested color
     #  https://docs.opencv.org/3.4/da/d97/tutorial_threshold_inRange.html 
 
     lower_red = np.array([low_H, low_S, low_V])
