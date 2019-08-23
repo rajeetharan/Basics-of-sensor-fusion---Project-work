@@ -29,7 +29,7 @@ The timestamp is in millisecond and the fetched readings are exported to a text 
 
 
 
-b. Camera_shape_detection.py
+b. Pi_camera.py
 
 Using Raspberry Pi Camera Module V2 and OPENCV library 
 Same edge size shapes ( Triangle , square , pentagon , hexagon ) are deteced and the distance between camera and shape is exported.
@@ -43,5 +43,5 @@ IN this case the calculations are carried out with my own edge length so when ev
 
 c.  HSV_filter.py
 
-This program is a sub program in case of using Camera_shape_detection.py in different environments( light intensity level ) or different colors.This programis used to calibrate and find the lower and Upper HSV values to do the thresholding operation of camera and filter our interested colorspace. We can figureout our HSV values and place it in the " Camera_shape_detection.py " low and upper  hsv values.
+This program is a sub program in case of using Camera_shape_detection.py in different environments( light intensity level ) or different colors.This programis used to calibrate and find the lower and Upper HSV values to do the thresholding operation of camera and filter our interested colorspace. We can figureout our HSV values and place it in the " Pi_camera.py " low and upper  hsv values.
 
