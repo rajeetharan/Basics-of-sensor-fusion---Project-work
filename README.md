@@ -16,6 +16,9 @@ Altimu10v5 IMU sensor (https://www.pololu.com/product/2739) is used in this proj
 It is essential to enable i2C ( https://www.raspberrypi-spy.co.uk/2014/11/enabling-the-i2c-interface-on-the-raspberry-pi/ )
 and I2C dependencies installed ( if your version is lite )
 Following library is used to access the Altimu10v5 IMU sensor https://github.com/SvetoslavKuzmanov/altimu10v5.
+It is necessary to install them ( sudo python setup.py make) then ( sudo python setup.py install)
+Also to have the dependency files in same directory of the code file.
+
 Following IC are LSM6DS33 3-axis gyroscope , 3-axis accelerometer and LIS3MDL 3-axis magnetometer inside the IMU and utlized in the code.
 The timestamp is in millisecond and the fetched readings are exported to a text file named " IMU_Readings.txt "
 
