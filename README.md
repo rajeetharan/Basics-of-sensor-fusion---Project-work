@@ -21,5 +21,5 @@ IN this case the calculations are carried out with my own edge length so when ev
 
 c.  HSV_filter.py
 
-This programis  used to calibrate and find the lower and Upper HSV values to do the thresholding operation of camera and filter our interested colorspace. We can figureout our HSV values and place it in the " Camera_shape_detection.py " low and upper  hsv values.
+This program is a sub program in case of using Camera_shape_detection.py in different environments( light intensity level ) or different colors.This programis used to calibrate and find the lower and Upper HSV values to do the thresholding operation of camera and filter our interested colorspace. We can figureout our HSV values and place it in the " Camera_shape_detection.py " low and upper  hsv values.
 
