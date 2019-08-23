@@ -7,20 +7,7 @@ sudo python3 program1.py && sudo python3 program2.py
 in our case 
 sudo python3 IMU.py && sudo python3 Camera_shape_detection.py
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------
 About Python scripts 
 
 a.  IMU.py
