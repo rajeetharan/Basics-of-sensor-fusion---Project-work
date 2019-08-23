@@ -102,7 +102,7 @@ while True:
                 
                 
             elif len(approx) > 6 :
-                cv2.putText(frame, "Circle", (x, y), font, 1, (0, 0, 0))
+                cv2.putText(frame, "Random Contour", (x, y), font, 1, (0, 0, 0))
                 pass
                 
             
