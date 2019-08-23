@@ -10,6 +10,17 @@ sudo python3 IMU.py && sudo python3 Camera_shape_detection.py
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 About Python scripts 
 
 a.  IMU.py
@@ -26,12 +37,21 @@ The timestamp is in millisecond and the fetched readings are exported to a text 
 
 
 
+
+
+
+
+
 b. Camera_shape_detection.py
 
 Using Raspberry Pi Camera Module V2 and OPENCV library 
 Same edge size shapes ( Triangle , square , pentagon , hexagon ) are deteced and the distance between camera and shape is exported.
 The timestamp is in millisecond and the calculated distances are exported to a text file named " camera reading.txt ".
 IN this case the calculations are carried out with my own edge length so when ever experiemnting with a different edge length shape it should be replaced in calculation part. 
+
+
+
+
 
 
 c.  HSV_filter.py
