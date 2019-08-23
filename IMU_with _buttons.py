@@ -32,15 +32,15 @@ while True:
     timestamped_imu_readings = np.append(timestamped_imu_readings, lis3mdl.get_magnetometer_raw())
     #appending IMU readings to the array
     
-    write_fmt = " ".join("%4.8f" for _ in timestamped_imu_readings)
-    #writing format of reading's decimal points
+  
     timestamped_imu_readings = np.append(float(timestamp),timestamped_imu_readings)
     #adding readings row
-    write_fmt += " %.0f"
+    
     #writing format 
     with open("IMU_Readings.txt", "ab") as f:
-        np.savetxt(f, np.expand_dims(timestamped_imu_readings, axis=0),  fmt=write_fmt)
+        np.savetxt(f, np.expand_dims(timestamped_imu_readings, axis=0),  fmt='%4.8f')
         #saving file
+        #writing format of reading's decimal points
         
         
 
