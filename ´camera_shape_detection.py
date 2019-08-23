@@ -39,7 +39,7 @@ while True:
     # my  filtered HSV values for shape colors
     # from following link we can HSV filter any interested color
     #  https://docs.opencv.org/3.4/da/d97/tutorial_threshold_inRange.html 
-
+       
     lower_red = np.array([low_H, low_S, low_V])
     upper_red = np.array([high_H, high_S, high_V])
     ##defining lower and upper limits of thresholding
@@ -110,13 +110,10 @@ while True:
     cv2.imshow("Frame", frame)
     cv2.imshow("Mask", mask)
     #displaying mask and Frame
-    
-    write_fmtt = " ".join("%4.8f" for _ in timestamped_camera_readings)
+   
     timestamped_camera_readings = np.append(float(timestamp_ms),[Distance_triangle , Distance_square , Distance_pentagone , Distance_hexagone])
-    write_fmtt += " %.0f"
     #logging format of the results
-    
-    
+      
     with open("camera reading {}.txt".format(datetime.now().strftime('%d-%m-%Y-%H-%M')), "ab") as ff:
         np.savetxt(ff, np.expand_dims(timestamped_camera_readings, axis=0),fmt='%f')
         #saving results into a file
