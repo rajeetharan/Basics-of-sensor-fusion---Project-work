@@ -34,15 +34,13 @@ while True:
     
   
     timestamped_imu_readings = np.append(float(timestamp),timestamped_imu_readings)
-    #adding readings row
+    #adding readings in row
     
     #writing format 
     with open("IMU_Readings.txt", "ab") as f:
         np.savetxt(f, np.expand_dims(timestamped_imu_readings, axis=0),  fmt='%4.8f')
         #saving file
-        #writing format of reading's decimal points
-        
-        
+        #writing format and IMU reading's decimal points    
 
     sleep(0.8)
         
