@@ -118,7 +118,7 @@ while True:
         np.savetxt(ff, np.expand_dims(timestamped_camera_readings, axis=0),fmt='%4.8f')
         #saving results into a file
         
-    key = cv2.waitKey(1)
+    key = cv2.waitKey(0)
     if key == 0:
         break
     #exiting operation
