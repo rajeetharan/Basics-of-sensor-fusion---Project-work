@@ -31,7 +31,7 @@ while True:
     
     timestamped_camera_readings = np.ndarray((0,), np.float32)
     timestamp = calendar.timegm(time.gmtime())
-    timestamp_ms= time.time()
+    timestamp= time.time()*1000
     
     
     _, frame = cap.read()
