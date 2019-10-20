@@ -1,11 +1,4 @@
-Execute both programs simultaneously
-
-To run python programs simultaneously,in the terminal   
-                
-sudo python3 program1.py && sudo python3 program2.py
-
-in our case 
-sudo python3 IMU.py && sudo python3 Pi_camera.py
+Pooling.py program runs camera.py and IMU.py and motor_control.py simultaniously.
 
 ----------------------------------------------------------------------------------------------------------
 About Python scripts 
@@ -37,11 +30,16 @@ The timestamp is in millisecond and the calculated distances are exported to a t
 IN this case the calculations are carried out with a unique shape edge length so when ever experiemnting with a different edge length shape it should be replaced in calculation part. 
 
 
+c.motor_control.py
 
 
 
 
-c.  HSV_filter.py
+d.pooling.py
+
+
+
+e.  HSV_filter.py
 
 This program is a sub program in case of using Pi_camera.py in different environments( different light intensity level ) or different colors.This programis used to calibrate in other words to find the lower and Upper HSV values to do the thresholding operation of camera and filter our interested colorspace. We can figureout our HSV values and place it in the " Pi_camera.py " low and upper  hsv values.
 
