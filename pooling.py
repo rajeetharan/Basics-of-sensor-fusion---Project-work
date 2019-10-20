@@ -2,7 +2,7 @@ import os
 from multiprocessing import Pool                                                
                                                                                 
                                                                                 
-processes = ('a.py','b.py', 'c.py')                    
+processes = ('Camera.py','IMU.py', 'motor_control.py')                    
                                                                                 
 def run_process(process):                                                             
     os.system('python3 {}'.format(process))                                       
